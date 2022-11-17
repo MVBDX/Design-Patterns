@@ -1,4 +1,4 @@
-package ir.mvbdx.designpatterns.singleton;
+package ir.mvbdx.designpatterns.creational.singleton;
 
 public class Mouse {
     private static Mouse mouse = null; // lazy

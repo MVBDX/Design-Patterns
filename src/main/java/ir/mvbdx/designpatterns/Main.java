@@ -1,6 +1,6 @@
 package ir.mvbdx.designpatterns;
 
-import ir.mvbdx.designpatterns.singleton.Mouse;
+import ir.mvbdx.designpatterns.creational.singleton.Mouse;
 
 public class Main {
     public static void main(String[] args) {
