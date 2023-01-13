@@ -19,8 +19,8 @@ public abstract class Shape implements Cloneable {
 
     @Override
     public boolean equals(Object object2) {
-        if (!(object2 instanceof Shape shape2)) return false;
-        return shape2.x == x && shape2.y == y && Objects.equals(shape2.color, color);
+        if (!(object2 instanceof Shape)) return false;
+        return ((Shape) object2).x == x && ((Shape) object2).y == y && Objects.equals(((Shape) object2).color, color);
     }
 
 }

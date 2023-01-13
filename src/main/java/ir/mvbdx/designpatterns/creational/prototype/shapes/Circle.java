@@ -26,8 +26,8 @@ public class Circle extends Shape {
 
     @Override
     public boolean equals(Object object2) {
-        if (!(object2 instanceof Circle shape2) || !super.equals(object2)) return false;
-        return shape2.radius == radius;
+        if (!(object2 instanceof Circle) || !super.equals(object2)) return false;
+        return ((Circle) object2).radius == radius;
     }
 
     @Override
