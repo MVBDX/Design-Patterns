@@ -9,6 +9,6 @@ public class MobileListener implements EventListener {
 
     @Override
     public void update(EventType eventType) {
-        System.out.println("Sending " + eventType + " notification for " + number);
+        System.out.printf("Sending %s notification for %s%n", eventType, number);
     }
 }

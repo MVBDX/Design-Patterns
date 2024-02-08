@@ -3,7 +3,7 @@ package ir.mvbdx.designpatterns.behavioral.observer.impl;
 import java.util.*;
 
 public class NotificationService {
-    private final Map<EventType, List<EventListener>> subscribers = new HashMap<>();
+    private final Map<EventType, List<EventListener>> subscribers = new EnumMap<>(EventType.class);
 
     public NotificationService() {
         Arrays.stream(EventType.values()).forEach(eventType -> subscribers.put(eventType, new ArrayList<>()));
